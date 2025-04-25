@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王佳毅的个人主页</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 0 0 10px 10px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+        }
+        
+        section {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .project {
+            margin-bottom: 1.5rem;
+        }
+        
+        .hobby {
+            display: inline-block;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            background-color: var(--light-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--dark-color);
+            color: white;
+            border-radius: 10px 10px 0 0;
+            margin-top: 2rem;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>王佳毅</h1>
+        <p>西安航空学院 | 计算机科学与技术专业 | 嵌入式系统开发爱好者</p>
+    </header>
+
+    <section id="about">
+        <h2>关于我</h2>
+        <p>你好！我是王佳毅，西安航空学院计算机科学与技术专业在读学生，嵌入式系统开发爱好者。</p>
+        
+        <h3>教育背景</h3>
+        <ul>
+            <li><strong>西安航空学院</strong> 计算机科学与技术专业 (202X级)</li>
+            <li>主修课程：嵌入式系统设计、C/C++编程、单片机原理、操作系统</li>
+        </ul>
+        
+        <h3>技术兴趣</h3>
+        <ul>
+            <li>专注于<strong>嵌入式系统开发</strong>，包括：
+                <ul>
+                    <li>STM32系列单片机开发</li>
+                    <li>RTOS实时操作系统应用</li>
+                    <li>嵌入式Linux系统移植</li>
+                    <li>物联网(IoT)设备开发</li>
+                </ul>
+            </li>
+            <li>熟悉Keil、IAR、STM32CubeIDE等开发环境</li>
+            <li>了解ARM Cortex-M系列架构</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>项目经验</h2>
+        
+        <div class="project">
+            <h3>基于STM32的智能家居控制系统</h3>
+            <ul>
+                <li>使用STM32F103实现环境监测与远程控制</li>
+                <li>集成温湿度传感器、WiFi模块</li>
+                <li>开发了Android端控制APP</li>
+            </ul>
+        </div>
+        
+        <div class="project">
+            <h3>嵌入式Linux车载信息娱乐系统</h3>
+            <ul>
+                <li>在Raspberry Pi上移植嵌入式Linux</li>
+                <li>开发多媒体播放器应用</li>
+                <li>实现GPS导航功能</li>
+            </ul>
+        </div>
+        
+        <div class="project">
+            <h3>无人机飞控系统开发</h3>
+            <ul>
+                <li>基于STM32F4的飞行控制器</li>
+                <li>实现PID姿态控制算法</li>
+                <li>开发地面站控制软件</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>兴趣爱好</h2>
+        
+        <h3>体育运动</h3>
+        <div>
+            <span class="hobby">🏀 篮球：校队成员，司职得分后卫</span>
+            <span class="hobby">🏸 羽毛球：每周固定训练</span>
+            <span class="hobby">🏓 乒乓球：学院比赛八强</span>
+            <span class="hobby">🎱 台球：休闲娱乐首选</span>
+        </div>
+        
+        <h3>其他爱好</h3>
+        <div>
+            <span class="hobby">📺 B站科技区深度用户</span>
+            <span class="hobby">🎮 电子竞技爱好者</span>
+            <span class="hobby">📚 科技书籍阅读</span>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>联系方式</h2>
+        <ul>
+            <li>GitHub: <a href="https://github.com/wangjiayi9527" target="_blank">https://github.com/wangjiayi9527</a></li>
+            <li>QQ: 2170187051</li>
+            <li>电子邮箱: <a href="mailto:2170187051@qq.com">2170187051@qq.com</a></li>
+            <li>B站: <a href="https://space.bilibili.com/" target="_blank">https://space.bilibili.com/</a>（请替换为你的B站ID）</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 王佳毅的个人主页 | 托管于 <a href="https://wangjiayi9527.github.io" style="color:white;">wangjiayi9527.github.io</a></p>
+        <p>最后更新: 2025年4月25日</p>
+    </footer>
+</body>
+</html>
